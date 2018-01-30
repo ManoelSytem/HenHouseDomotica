@@ -21,6 +21,7 @@ namespace HenHouseDomotica
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(HomePage)));
         }
 
+
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = (MasterPageItem)e.SelectedItem;
@@ -33,5 +34,6 @@ namespace HenHouseDomotica
             Detail = new NavigationPage((Page)Activator.CreateInstance(pagina));
             IsPresented = false;
         }
+
     }
 }

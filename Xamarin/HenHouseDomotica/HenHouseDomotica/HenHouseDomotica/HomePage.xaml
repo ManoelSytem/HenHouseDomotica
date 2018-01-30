@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HenHouseDomotica.HomePage" Title="Hen House Domótica">
+    
     <Grid Padding="10">
         <Grid.RowDefinitions>
             <RowDefinition  Height="150" ></RowDefinition>
@@ -19,9 +20,9 @@
                 <Button Text="Ligar Luzes do Galiheiro"   TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
             </StackLayout>
         </StackLayout>
-        <Button Text="Ligar Luzes do Galiheiro"   Grid.Row="0" Grid.Column="0"  BackgroundColor="#287cbe" Image="Lampada.png" TextColor="White"   />
-        <Button Text="Desligar Luzes do Galheiro"   Grid.Row="0" Grid.Column="1"  BackgroundColor="#287cbe" Image="LampadaDesligada.png" TextColor="White"   />
-        <Button Text="Status do Galiheiro" Grid.Row="1" Grid.Column="0"  BackgroundColor="#5153a9" Image="Galinheiro.png" TextColor="White"  />
-        <Button Text="Visualizar Eventos" Grid.Row="1" Grid.Column="1"  Image="Televisor.png" BackgroundColor="#a434a6" TextColor="White"  />
+        <Button Text="Ligar Luzes do Galiheiro"   Grid.Row="0" Grid.Column="0"  BackgroundColor="#287cbe" Image="Lampada.png" TextColor="White"  Clicked="LigaLuzesGalinheiro" />
+        <Button Text="Desligar Luzes do Galheiro"   Grid.Row="0" Grid.Column="1"  BackgroundColor="#287cbe" Image="LampadaDesligada.png" TextColor="White"  Clicked="DesligarLuzesGalinheiro" />
+        <Button x:Name="EstadoGalinheiro" Text="Status do Galiheiro Desligado" Grid.Row="1" Grid.Column="0"  BackgroundColor="#5153a9" Image="Galinheiro.png" TextColor="White"  />
+        <Button Text="Visualizar Eventos" Grid.Row="1" Grid.Column="1"  Image="Televisor.png" BackgroundColor="#a434a6" TextColor="White" Clicked="EventosCliked" />
     </Grid>
 </ContentPage>

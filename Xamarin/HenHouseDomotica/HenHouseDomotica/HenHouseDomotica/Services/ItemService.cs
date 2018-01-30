@@ -15,7 +15,7 @@ namespace HenHouseDomotica.Services
             // Criando as paginas para navegação
             // Definimos o titulo para o item
             // o icone do lado esquerdo e a pagina que vamos abrir
-            var HomeView = new MasterPageItem() { Title = "Dashboard ", TargetType = typeof(dashboardPageView) };
+            var HomeView = new MasterPageItem() { Title = "Dashboard ", TargetType = typeof(HomePage) };
             var EventoView = new MasterPageItem() { Title = "Eventos", TargetType = typeof(EventoPage) };
             var SobreView = new MasterPageItem() { Title = "Sobre", TargetType = typeof(SobrePage) };
             // Adicionando items no menuLista

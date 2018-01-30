@@ -4,7 +4,10 @@
              x:Class="HenHouseDomotica.Views.EventoPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Eventos é armazenada a mensagem que surge com a criação do evento,
+dependendo da sua origem. É guardada a relação com o dispositivo ao qual o evento se
+refere, para transmissão dessa informação ao utilizador no aparecimento dos eventos na
+aplicação móvel. Lista de Eventos Ocorridos "
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

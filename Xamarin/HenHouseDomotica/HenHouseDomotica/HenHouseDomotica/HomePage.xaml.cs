@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HenHouseDomotica.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,25 @@ namespace HenHouseDomotica
 		{
 			InitializeComponent ();
         }
-	}
+
+        private async void LigaLuzesGalinheiro(object sender, EventArgs e)
+        {
+            await DisplayAlert("Menssagem", "Luzes Ligada com sucesso", "OK");
+        }
+
+        private async void DesligarLuzesGalinheiro(object sender, EventArgs e)
+        {
+            await DisplayAlert("Menssagem", "Luzes Desligada com sucesso", "OK");
+        }
+
+        private async void EventosCliked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EventoPage());
+        }
+
+        private void AtualizarEstadoGalinheiro()
+        {
+
+        }
+    }
 }
