@@ -18,7 +18,7 @@ namespace HenHouseDomotica
             ImgbackMenu.Source = ImageSource.FromResource("HenHouseDomotica.Resource.backMenu.jpg");
             _menuLista = ItemService.GetMenuItens();
             navigationDrawerList.ItemsSource = _menuLista;
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(dashboardPageView)));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(HomePage)));
         }
 
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)

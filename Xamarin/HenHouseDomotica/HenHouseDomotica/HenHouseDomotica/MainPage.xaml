@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HenHouseDomotica"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-             x:Class="HenHouseDomotica.MainPage" MasterBehavior="SplitOnPortrait">
+             x:Class="HenHouseDomotica.MainPage" MasterBehavior="SplitOnPortrait" Title="Hen House Domótica">
 
     <MasterDetailPage.Master>
         <ContentPage  Title="Menu" BackgroundColor="#e8e8e8">
@@ -21,7 +21,7 @@
                         <Image  x:Name="ImgbackMenu"  Aspect="AspectFill" />
                         <StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                             <controls:CircleImage BorderColor="White" BorderThickness="2" Source="profile.png" Aspect="AspectFill" WidthRequest="85" HeightRequest="85" />
-                            <Label Text="Manoel Neto" TextColor="White" FontSize="Large" />
+                            <Label Text="Sr João" TextColor="White" FontSize="Large" />
                         </StackLayout>
                     </Grid>
                     <ListView x:Name="navigationDrawerList" RowHeight="60"
